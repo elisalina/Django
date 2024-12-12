@@ -22,8 +22,9 @@ from task3.views import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("func_views", func_views),
+    path("class/", task_views.as_view()),
     path("laundry/", laundry),
     path("laundry/catalog/", services),
-    path("laundry/cart/", cart),
-    path("class/", task_views.as_view())
+    path("laundry/cart/", cart)
 ]
