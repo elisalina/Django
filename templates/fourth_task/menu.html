@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block pagename %}{% endblock %}
+    {% block menu %}{% endblock %}
+        <p><a href="/laundry">Главная</a></p>
+        <p><a href="/laundry/catalog">Услуги</a></p>
+        <p><a href="/laundry/cart">Корзина</a></p>
+    {% block content %}{% endblock %}
+</body>
+</html>
