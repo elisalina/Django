@@ -20,6 +20,7 @@ from django.urls import path
 from task2.views import *
 from task4.views import *
 from templates import *
+from task5.views import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -28,5 +29,7 @@ urlpatterns = [
     path("laundry/", laundry),
     path("laundry/catalog/", services),
     path("laundry/cart/", cart),
-    path("laundry/base/", base)
+    path("laundry/base/", base),
+    path('signup_html/', sign_up_by_html, name='sign_up_by_html'),
+    path('django_sign_up/', sign_up_by_django, name='sign_up_by_django'),
 ]

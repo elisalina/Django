@@ -1,8 +1,4 @@
 {% extends 'fourth_task/menu.html' %}
-{% block pagename %}{% endblock %}
-{% block laundry %}
-    <p><a href="/laundry">Главная</a></p>
-    <p><a href="/laundry/catalog">Услуги</a></p>
-    <p><a href="/laundry/cart">Корзина</a></p>
-{% endblock %}
-    {% block content %}{% endblock %}
+{% block pagename4 %}<h1>Главная страница</h1>{% endblock %}
+{% block menu4 %}{{ block.super }}{% endblock %}
+{% block content4 %}{% endblock %}
