@@ -7,7 +7,7 @@
 <body>
     <h1>Страница регистрации</h1>
     <h3>{{ error }}</h3>
-    <from method="post">
+    <form method="post">
         {% csrf_token %}
             <label for="username">'Введите логин:'</label>
             <input type="text" id="username" name="username" maxlength="30" required>
@@ -22,6 +22,6 @@
             <input type="int" id="age" name="age" maxlength="3" required>
 
         <button type="submit">Зарегестироваться</button>
-    </from>
+    </form>
 </body>
 </html>
